@@ -16,7 +16,7 @@ import java.util.Map;
  */
 
 @RestController
-@RequestMapping(value = "/hello", produces = MediaType.APPLICATION_JSON)
+@RequestMapping(value = "/hello", consumes = MediaType.APPLICATION_JSON)
 public class HelloController {
 
     @GetMapping(produces = MediaType.APPLICATION_JSON)
