@@ -3,13 +3,12 @@ package com.farplayground.searchspecification.controller;
 import com.farplayground.searchspecification.model.request.CreateProfileRequest;
 import com.farplayground.searchspecification.model.response.ProfilesResponse;
 import com.farplayground.searchspecification.service.ProfileService;
+import jakarta.validation.Valid;
+import jakarta.ws.rs.core.MediaType;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
-import javax.ws.rs.core.MediaType;
 
 /**
  * @author farras

@@ -12,12 +12,15 @@ import lombok.Data;
 @Data
 public class ProfileDetailResponse {
 
+    private final Integer id;
+
     private final String name;
 
     private final Integer age;
 
     public static ProfileDetailResponse from(Profile profile){
         return ProfileDetailResponse.builder()
+                .id(profile.getId())
                 .name(profile.getName())
                 .age(profile.getAge())
                 .build();
