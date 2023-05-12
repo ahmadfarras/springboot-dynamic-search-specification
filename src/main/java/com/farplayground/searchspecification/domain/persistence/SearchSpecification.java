@@ -43,6 +43,7 @@ public class SearchSpecification<T> implements Specification<T> {
         this.dateRange = dateRange;
     }
 
+    //TODO: Still error when using data type other than string. Need to find a way to search with different data type.
     @Override
     public Predicate toPredicate(Root<T> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
         Predicate searchPredicate = createSearchPredicate(root, criteriaBuilder);
