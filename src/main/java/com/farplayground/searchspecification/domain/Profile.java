@@ -2,6 +2,8 @@ package com.farplayground.searchspecification.domain;
 
 import jakarta.persistence.*;
 
+import java.time.ZonedDateTime;
+
 /**
  * @author farras
  * @since 0.0.1
@@ -19,6 +21,14 @@ public class Profile {
 
     private Integer age;
 
+    private ZonedDateTime createdAt;
+
+    private String createdBy;
+
+    private ZonedDateTime updatedAt;
+
+    private String updateBy;
+
     public Integer getId() {
         return id;
     }
@@ -29,6 +39,22 @@ public class Profile {
 
     public Integer getAge() {
         return age;
+    }
+
+    public ZonedDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public String getCreatedBy() {
+        return createdBy;
+    }
+
+    public ZonedDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public String getUpdateBy() {
+        return updateBy;
     }
 
     protected Profile() {
